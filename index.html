@@ -12,15 +12,31 @@
     
     <style>
         /* Global styles */
+        /* Stile generale */
         body {
             font-family: "Lekton", sans-serif;
             font-weight: 400;
             background-color: black;
             color: white;
-            margin: 100px;
-            line-height: 1;
+            margin: 0;
+            line-height: 1.5;
+
         }
 
+        /* Contenitore principale */
+        .container {
+            max-width: 1200px; /* Larghezza massima del contenuto su PC */
+            margin: 0 auto; /* Centra il contenuto */
+            padding: 5px; /* Spaziatura interna */
+        }
+
+        /* Su dispositivi mobili, il contenuto occupa tutta la larghezza */
+        @media screen and (max-width: 768px) {
+            .container {
+                max-width: 100%; /* Occupa tutta la larghezza su mobile */
+                padding: 5px;
+            }
+        }
         h1, h2 {
             font-family: "Lekton", sans-serif;
             font-weight: 400;
@@ -40,7 +56,7 @@
 
         /* Links */
         a {
-            color: #00ff6a;
+            color: #66cb7c;
             text-decoration: none;
         }
 
@@ -50,55 +66,41 @@
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Tommi Bimbato</h1>
+        <p><strong>Master's student in Data Science, University of Verona</strong></p>
+        <strong>GitHub:</strong> <a href="https://github.com/tbimbato" target="_blank">github.com/tbimbato</a>
 
-    <h1>Tommi Bimbato</h1>
-    <p><strong>Master's student in Data Science, University of Verona</strong></p>
-    <strong>GitHub:</strong> <a href="https://github.com/tbimbato" target="_blank">github.com/tbimbato</a>
+        <h2>About Me</h2>
+        <p><b>This site is currently under construction. Please check back later for updates.</b></p>
 
-    <h2>About Me</h2>
-    <p><b>This site is currently under construction. Please check back later for updates.</b></p>
+        <h2>Education</h2>
 
-    <h2>Education</h2>
+        <p><strong>University of Verona, Italy</strong> — <em>Coursework in Computer Science and Data Science (2024/2025)</em></p>
+        
+        <p>
+        | Programming in Python with a focus on data analysis, visualization, and predictive modeling.
+        | Foundations of neural networks, statistical modeling, and machine learning for predictive analytics.
+        | Ethical and legal considerations in data processing, including GDPR compliance.
+        | Core topics in algorithms, data structures, computer architecture, mathematical logic, and discrete mathematics.
+        | Fundamentals of business organization and management.
+        </p>
 
-    <p><strong>University of Verona, Italy</strong> — <em>Coursework in Computer Science and Data Science (2024/2025)</em></p>
-    <p>
-    | Programming in Python with a focus on data analysis, visualization, and predictive modeling.</li>
-    | Foundations of neural networks, statistical modeling, and machine learning for predictive analytics.</li>
-    | Ethical and legal considerations in data processing, including GDPR compliance.</li>
-    | Core topics in algorithms, data structures, computer architecture, mathematical logic, and discrete mathematics.</li>
-    | Fundamentals of business organization and management.</li>
-    </p>
+        <h2>Projects & Recognitions</h2>
 
-    <p><strong>Università IUAV di Venezia, Italy</strong> — <em>Bachelor’s in Architecture and Building Engineering (Science and Culture of Design), 2020</em></p>
-    <p>
-        | Comprehensive training in architectural design and engineering with a focus on sustainability and technical proficiency.</li>
-    </p>
+        <p>| 2018 — Mentioned in IQD n. 53 (Singolarità) and cited in "Lampedusa: La Cattedrale di Solomon - Vol. II" as student-contributor to a project with Arch. Renato Rizzi.</p>
 
+        <p>| 2015 — Co-designed and presented ‘Nothing Personal’, working in a team of six on the exhibition layout and immersive audiovisual experience at IUAV’s ‘Ex Cotonificio’ main exhibition area. The exhibition was extended beyond its initial timeframe due to public and academic interest.</p>
 
-    <h2>Projects & Recognitions</h2>
+        <h2>Current Working On</h2>
 
-    <p>
-    | 2018 — Mentioned in IQD n. 53 (Singolarità) and cited in "Lampedusa: La Cattedrale di Solomon - Vol. II" as student-contributor to a project with Arch. Renato Rizzi.
-    </p>
+        <p>| <strong>Neural Network Deployment on PYNQ FPGA Board</strong> — Implementing and optimizing neural network models for hardware acceleration on Xilinx PYNQ FPGA.  
+        | <a href="https://github.com/tbimbato" target="_blank">[WIP - Private Repo]</a></p>
 
-    <p>
-        | 2015 — Co-designed and presented ‘Nothing Personal’, working in a team of six on the exhibition layout and immersive audiovisual experience at IUAV’s ‘Ex Cotonificio’ main exhibition area. The exhibition was extended beyond its initial timeframe due to public and academic interest.    </p>
+        <p>| <strong>Air Quality Forecasting</strong> — Developing a predictive model for air quality forecasting using machine learning techniques.  
+        | <a href="https://github.com/tbimbato" target="_blank">[WIP - Private Repo]</a></p>
 
-
-    <h2>Current Working On</h2>
-
-    <p>
-    | <strong>Neural Network Deployment on PYNQ FPGA Board</strong> — Implementing and optimizing neural network models for hardware acceleration on Xilinx PYNQ FPGA.  
-    | <a href="https://github.com/tbimbato" target="_blank">[WIP - Private Repo]</a>
-    </p>
-
-    <p>
-    | <strong>Air Quality Forecasting</strong> — Developing a predictive model for air quality forecasting using machine learning techniques.  
-    | <a href="https://github.com/tbimbato" target="_blank">[WIP - Private Repo]</a>
-    </p>
-
-    <div style="height: 50px;"></div>
-    <p><b>This site is currently under construction. Please check back later for updates.</b></p>
-
-</body>
-</html>
+        <div style="height: 50px;"></div>
+        <p><b>This site is currently under construction. Please check back later for updates.</b></p>
+    </div>
+</body></html>
